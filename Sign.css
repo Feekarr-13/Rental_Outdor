@@ -1,0 +1,145 @@
+/* Reset dasar untuk menjaga konsistensi antara browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* Gaya wrapper form */
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+/* Gaya form */
+
+form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* Gaya judul form */
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Gaya grup input */
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+
+/* Gaya input */
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+
+/* Gaya label */
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    padding: 0 5px;
+    color: #999;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+
+/* Gaya fokus pada input */
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+/* Gaya fokus pada label */
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+
+/* Gaya checkbox remember */
+
+.remember {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Gaya tombol */
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* Gaya hover pada tombol */
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Gaya tautan Sign In */
+
+.signUp-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signUp-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+/* Gaya hover pada tautan */
+
+.signUp-link a:hover {
+    color: #0056b3;
+}
